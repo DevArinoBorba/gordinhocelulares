@@ -238,3 +238,37 @@ textarea:focus-visible {
     min-height: 44px;
   }
 }
+
+/* ==========================================================================
+   EFEITOS VISUAIS: SCROLL REVEAL & MICRO-ANIMAÇÕES
+   ========================================================================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Delays para animação escalonada em grids */
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .mascot-image-wrapper img,
+  .mascot-portrait img,
+  .badge-inpi::before {
+    animation: none !important;
+  }
+}

@@ -94,7 +94,14 @@
   border-radius: var(--radius-xl);
   padding: var(--space-6);
   text-align: center;
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  transition: all var(--transition-smooth);
+}
+
+.hero-mascot-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.6), 0 0 25px rgba(16, 185, 129, 0.12);
 }
 
 .mascot-image-wrapper {
@@ -111,7 +118,6 @@
   max-height: 100%;
   width: auto;
   object-fit: contain;
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
 }
 
 /* --------------------------------------------------------------------------
@@ -594,6 +600,13 @@
   padding: var(--space-3) var(--space-4);
   border-radius: var(--radius-md);
   border: 1px solid var(--border-color);
+  transition: all var(--transition-fast);
+}
+
+.diff-item:hover {
+  border-color: rgba(16, 185, 129, 0.3);
+  transform: translateX(4px);
+  background: rgba(16, 185, 129, 0.05);
 }
 
 .diff-item-icon {
@@ -627,12 +640,14 @@
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: var(--space-5);
-  transition: all var(--transition-base);
+  transition: all var(--transition-smooth);
 }
 
 .technique-card:hover {
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(234, 179, 8, 0.35);
   background: var(--bg-surface-elevated);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(234, 179, 8, 0.08);
 }
 
 .products-showcase-grid {
@@ -661,13 +676,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: all var(--transition-base);
+  transition: all var(--transition-smooth);
 }
 
 .product-item-card:hover {
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.25);
   background: var(--bg-surface-elevated);
-  transform: translateY(-2px);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.6);
 }
 
 .product-image-box {
@@ -680,6 +696,11 @@
   justify-content: center;
   border-bottom: 1px solid var(--border-color);
   position: relative;
+  transition: background var(--transition-fast);
+}
+
+.product-item-card:hover .product-image-box {
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .product-badge-overlay {
@@ -712,11 +733,14 @@
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: var(--space-5);
-  transition: all var(--transition-base);
+  transition: all var(--transition-smooth);
 }
 
 .step-card:hover {
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(16, 185, 129, 0.35);
+  background: var(--bg-surface-elevated);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px -8px rgba(0, 0, 0, 0.5);
 }
 
 .step-number-bubble {
@@ -733,6 +757,14 @@
   align-items: center;
   justify-content: center;
   margin-bottom: var(--space-3);
+  transition: all var(--transition-fast);
+}
+
+.step-card:hover .step-number-bubble {
+  background: var(--color-primary);
+  color: #062314;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.5);
 }
 
 /* --------------------------------------------------------------------------

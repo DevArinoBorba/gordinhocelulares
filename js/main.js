@@ -1,15 +1,44 @@
 /**
  * MAIN JAVASCRIPT — GRUPO GORDINHO
- * Interatividade da navegação, drawer mobile e modais
+ * Interatividade da navegação, drawer mobile, modais e efeitos visuais
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   initHeaderScroll();
+  initProgressBar();
   initMobileMenu();
   initWhatsAppModal();
   initContactTabs();
   highlightActiveNavLink();
+  initScrollReveal();
+  initCounters();
 });
+
+/**
+ * Barra de progresso de leitura no topo da página
+ */
+function initProgressBar() {
+  const header = document.querySelector('.site-header');
+  if (!header) return;
+
+  // Cria a barra se não existir
+  let progressBar = header.querySelector('.header-progress-bar');
+  if (!progressBar) {
+    progressBar = document.createElement('div');
+    progressBar.className = 'header-progress-bar';
+    header.appendChild(progressBar);
+  }
+
+  const updateProgress = () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    progressBar.style.width = `${Math.min(progress, 100)}%`;
+  };
+
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
+}
 
 /**
  * Efeito de cabeçalho ao rolar a página
@@ -81,7 +110,7 @@ function initMobileMenu() {
 }
 
 /**
- * Modal de Seleção de WhatsApp para as 2 Lojas Físicas
+ * Modal de Seleção de WhatsApp para as Lojas Físicas / Setores
  */
 function initWhatsAppModal() {
   const modalBackdrop = document.getElementById('whatsappModal');
@@ -144,7 +173,6 @@ function initContactTabs() {
         if (col.getAttribute('data-store') === targetStore) {
           col.style.display = 'flex';
         } else {
-          // Oculta apenas em telas menores que 992px via JS inline ou classe
           if (window.innerWidth < 992) {
             col.style.display = 'none';
           } else {
@@ -188,4 +216,122 @@ function highlightActiveNavLink() {
       link.classList.remove('active');
     }
   });
+}
+
+/**
+ * Efeito Visual: Scroll Reveal Suave (IntersectionObserver)
+ */
+function initScrollReveal() {
+  // Se usuário prefere movimento reduzido, pula animações
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('is-revealed'));
+    return;
+  }
+
+  // Auto-adiciona .reveal em seções principais, cards e blocos de destaque se ainda não tiverem
+  const targets = document.querySelectorAll(
+    'section:not(.page-header):not(.hero-section), .card, .proof-strip, .story-box, .values-card, .footer-store-box'
+  );
+
+  targets.forEach((el, index) => {
+    if (!el.classList.contains('reveal')) {
+      el.classList.add('reveal');
+      // Adiciona leve delay em cards dentro do mesmo grid
+      if (el.classList.contains('card') || el.classList.contains('values-card') || el.classList.contains('footer-store-box')) {
+        const siblingIndex = (index % 4) + 1;
+        el.classList.add(`reveal-delay-${siblingIndex}`);
+      }
+    }
+  });
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      rootMargin: '0px 0px -40px 0px',
+      threshold: 0.1
+    }
+  );
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+}
+
+/**
+ * Efeito Visual: Contadores Animados de Números
+ */
+function initCounters() {
+  const counterElements = document.querySelectorAll('.proof-number');
+  if (!counterElements.length) return;
+
+  const animateCounter = (el) => {
+    const rawText = el.textContent.trim();
+    
+    // Extrai prefixo, valor numérico e sufixo
+    let targetNum = 0;
+    let prefix = '';
+    let suffix = '';
+
+    if (rawText.includes('+10')) {
+      prefix = '+';
+      targetNum = 10;
+      suffix = ' Anos';
+    } else if (rawText.includes('250')) {
+      prefix = '+';
+      targetNum = 250;
+      suffix = ' mil';
+    } else if (rawText.includes('100%')) {
+      prefix = '';
+      targetNum = 100;
+      suffix = '%';
+    } else if (rawText.includes('20')) {
+      prefix = '+';
+      targetNum = 20;
+      suffix = ' mil';
+    } else {
+      return; // Mantém texto estático se formato desconhecido
+    }
+
+    let current = 0;
+    const duration = 1200; // ms
+    const startTime = performance.now();
+
+    const updateFrame = (currentTime) => {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      
+      // Easing suave (easeOutExpo)
+      const easeOut = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+      current = Math.floor(easeOut * targetNum);
+      
+      el.textContent = `${prefix}${current}${suffix}`;
+
+      if (progress < 1) {
+        requestAnimationFrame(updateFrame);
+      } else {
+        el.textContent = rawText; // Garante texto exato original no fim
+      }
+    };
+
+    requestAnimationFrame(updateFrame);
+  };
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  counterElements.forEach(el => observer.observe(el));
 }
