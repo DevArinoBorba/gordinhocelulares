@@ -1,0 +1,88 @@
+/**
+ * DESIGN TOKENS — GRUPO GORDINHO (MINIMALISTA & SOFISTICADO)
+ * Paleta refinada: Verde Esmeralda/Floresta discreto, Grafite profundo, Cinzas neutros elegantes, toques sutis de âmbar
+ */
+
+:root {
+  /* Brand Accent — Verde Esmeralda Discreto (Uso consciente de 10%) */
+  --color-primary: #10B981;            /* Esmeralda moderno e suave */
+  --color-primary-hover: #059669;      /* Esmeralda mais escuro */
+  --color-primary-dark: #047857;
+  --color-primary-subtle: rgba(16, 185, 129, 0.08);
+  --color-primary-border: rgba(16, 185, 129, 0.2);
+
+  /* Subtle Warm Accent (Mascote & Pequenos destaques) */
+  --color-accent: #EAB308;             /* Âmbar neutro */
+  --color-accent-hover: #CA8A04;
+  --color-accent-subtle: rgba(234, 179, 8, 0.08);
+
+  /* Backgrounds & Superfícies (Grafite / Obsidian Minimalista) */
+  --bg-main: #0B0F17;                  /* Fundo neutro e sóbrio */
+  --bg-surface: #111726;               /* Superfície limpa dos cards */
+  --bg-surface-elevated: #161F30;      /* Superfície elevada */
+  --bg-surface-hover: #1C273D;         /* Hover discreto */
+  --bg-glass: rgba(11, 15, 23, 0.85);  /* Header com blur limpo */
+
+  /* Neutros de Alta Legibilidade */
+  --text-primary: #F8FAFC;             /* Títulos e destaques */
+  --text-secondary: #94A3B8;           /* Textos corridos */
+  --text-muted: #64748B;               /* Metadados e legendas */
+  --border-color: rgba(255, 255, 255, 0.08); /* Linhas finas minimalistas */
+  --border-subtle: rgba(255, 255, 255, 0.05);
+
+  /* Semantic / WhatsApp */
+  --color-whatsapp: #10B981;           /* Verde harmonizado com a paleta */
+  --color-whatsapp-hover: #059669;
+  --color-pending: #94A3B8;
+  --color-pending-bg: rgba(255, 255, 255, 0.05);
+
+  /* Typography */
+  --font-heading: 'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+  /* Font Sizes */
+  --text-xs: 0.75rem;     /* 12px */
+  --text-sm: 0.875rem;    /* 14px */
+  --text-base: 1rem;      /* 16px */
+  --text-lg: 1.125rem;    /* 18px */
+  --text-xl: 1.25rem;     /* 20px */
+  --text-2xl: 1.5rem;     /* 24px */
+  --text-3xl: 1.875rem;   /* 30px */
+  --text-4xl: 2.25rem;    /* 36px */
+  --text-5xl: 3rem;       /* 48px */
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+
+  /* Layout */
+  --container-max: 1240px;
+  --container-padding: clamp(1rem, 2.5vw, 2rem);
+  --header-height: 72px;
+
+  /* Border Radius (Mais contido e elegante) */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+  --radius-full: 9999px;
+
+  /* Shadows (Sutis e suaves, sem brilhos neon) */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 12px 24px -4px rgba(0, 0, 0, 0.4);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 220ms ease;
+  --transition-smooth: 350ms cubic-bezier(0.16, 1, 0.3, 1);
+}

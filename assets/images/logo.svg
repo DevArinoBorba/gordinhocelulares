@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 70" width="100%" height="100%">
+  <defs>
+    <linearGradient id="logoGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#15803D"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Mascot Symbol Mini Icon -->
+  <g transform="translate(5, 5) scale(0.3)">
+    <circle cx="100" cy="100" r="92" fill="#111827" stroke="#22C55E" stroke-width="6"/>
+    <circle cx="100" cy="100" r="84" fill="#0B0F17"/>
+    <!-- Yellow Shirt -->
+    <path d="M 50 178 Q 100 155 150 178 L 158 200 L 42 200 Z" fill="#FACC15" stroke="#000" stroke-width="4"/>
+    <!-- Face -->
+    <ellipse cx="100" cy="118" rx="46" ry="42" fill="#FFDFC4" stroke="#000" stroke-width="4"/>
+    <!-- Eyes -->
+    <ellipse cx="80" cy="112" rx="7" ry="9" fill="#111827"/>
+    <circle cx="78" cy="109" r="2.8" fill="#FFFFFF"/>
+    <ellipse cx="120" cy="112" rx="7" ry="9" fill="#111827"/>
+    <circle cx="118" cy="109" r="2.8" fill="#FFFFFF"/>
+    <!-- Smile -->
+    <path d="M 80 132 Q 100 154 120 132" stroke="#991B1B" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- Green Cap -->
+    <path d="M 54 84 C 54 44, 146 44, 146 84 C 130 88, 70 88, 54 84 Z" fill="url(#logoGreen)" stroke="#000" stroke-width="4"/>
+    <path d="M 50 82 Q 100 92 150 82 Q 160 72 138 68 Q 95 72 50 82 Z" fill="#15803D" stroke="#000" stroke-width="4"/>
+    <text x="100" y="74" font-family="'Impact', sans-serif" font-size="16" font-weight="bold" fill="#FACC15" text-anchor="middle">G</text>
+  </g>
+
+  <!-- Typography -->
+  <text x="75" y="28" font-family="'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="800" letter-spacing="3" fill="#22C55E">GRUPO</text>
+  <text x="75" y="52" font-family="'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif" font-size="24" font-weight="900" letter-spacing="0.5" fill="#FFFFFF">GORDINHO</text>
+  <rect x="238" y="36" width="3" height="15" fill="#22C55E" rx="1.5"/>
+  <text x="246" y="44" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="8.5" font-weight="700" fill="#94A3B8" letter-spacing="0.5">CELULARES</text>
+  <text x="246" y="54" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="8.5" font-weight="700" fill="#FACC15" letter-spacing="0.5">&amp; PERSONALIZADOS</text>
+</svg>

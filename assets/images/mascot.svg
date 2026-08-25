@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFDFC4"/>
+      <stop offset="100%" stop-color="#F0B58D"/>
+    </linearGradient>
+    <linearGradient id="capGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#15803D"/>
+    </linearGradient>
+    <linearGradient id="shirtYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="100%" stop-color="#EAB308"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background Aura -->
+  <circle cx="100" cy="100" r="92" fill="#111827" stroke="#22C55E" stroke-width="4" filter="url(#shadow)"/>
+  <circle cx="100" cy="100" r="84" fill="#0B0F17"/>
+
+  <!-- Body / Yellow Shirt with collar -->
+  <path d="M 50 178 Q 100 155 150 178 L 158 200 L 42 200 Z" fill="url(#shirtYellow)" stroke="#000" stroke-width="3"/>
+  <path d="M 85 166 L 100 182 L 115 166 Z" fill="#22C55E" stroke="#000" stroke-width="2"/>
+  
+  <!-- Neck -->
+  <rect x="86" y="142" width="28" height="25" rx="5" fill="url(#skin)" stroke="#000" stroke-width="3"/>
+
+  <!-- Cheerful Ears -->
+  <circle cx="56" cy="115" r="14" fill="url(#skin)" stroke="#000" stroke-width="3"/>
+  <path d="M 54 110 Q 60 115 55 120" stroke="#D97706" stroke-width="2" fill="none"/>
+  
+  <circle cx="144" cy="115" r="14" fill="url(#skin)" stroke="#000" stroke-width="3"/>
+  <path d="M 146 110 Q 140 115 145 120" stroke="#D97706" stroke-width="2" fill="none"/>
+
+  <!-- Round Friendly Face -->
+  <ellipse cx="100" cy="118" rx="46" ry="42" fill="url(#skin)" stroke="#000" stroke-width="3.5"/>
+
+  <!-- Rosy Cheeks -->
+  <circle cx="72" cy="128" r="8" fill="#F87171" opacity="0.45"/>
+  <circle cx="128" cy="128" r="8" fill="#F87171" opacity="0.45"/>
+
+  <!-- Expressive Eyes -->
+  <!-- Left Eye -->
+  <ellipse cx="80" cy="112" rx="7" ry="9" fill="#111827"/>
+  <circle cx="78" cy="109" r="2.8" fill="#FFFFFF"/>
+  <circle cx="83" cy="115" r="1.2" fill="#FFFFFF"/>
+  
+  <!-- Right Eye -->
+  <ellipse cx="120" cy="112" rx="7" ry="9" fill="#111827"/>
+  <circle cx="118" cy="109" r="2.8" fill="#FFFFFF"/>
+  <circle cx="123" cy="115" r="1.2" fill="#FFFFFF"/>
+
+  <!-- Eyebrows -->
+  <path d="M 72 98 Q 80 93 89 97" stroke="#374151" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M 111 97 Q 120 93 128 98" stroke="#374151" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Cute Nose -->
+  <path d="M 96 118 Q 100 123 104 118" stroke="#C2410C" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+
+  <!-- Big Warm Smile with Tongue -->
+  <path d="M 78 130 Q 100 156 122 130 Q 100 134 78 130 Z" fill="#991B1B" stroke="#000" stroke-width="2.5"/>
+  <path d="M 88 141 Q 100 134 112 141 Q 100 154 88 141 Z" fill="#F43F5E"/>
+
+  <!-- Hair under Cap -->
+  <path d="M 58 98 Q 62 82 78 80 L 122 80 Q 138 82 142 98 Z" fill="#1E293B"/>
+
+  <!-- Green Cap (Boné Virado com Aba Estilizada) -->
+  <!-- Cap Crown -->
+  <path d="M 54 84 C 54 44, 146 44, 146 84 C 130 88, 70 88, 54 84 Z" fill="url(#capGreen)" stroke="#000" stroke-width="3.5"/>
+  <!-- Cap Front Seam & Button -->
+  <path d="M 100 48 L 100 82" stroke="#15803D" stroke-width="2"/>
+  <ellipse cx="100" cy="48" rx="6" ry="4" fill="#EAB308" stroke="#000" stroke-width="2"/>
+  <!-- Cap Visor / Aba Virada Lateral/Frente -->
+  <path d="M 50 82 Q 100 92 150 82 Q 160 72 138 68 Q 95 72 50 82 Z" fill="#15803D" stroke="#000" stroke-width="3"/>
+  <!-- Cap G Logo Accent -->
+  <text x="100" y="74" font-family="'Arial Black', sans-serif" font-size="14" font-weight="bold" fill="#FACC15" text-anchor="middle">G</text>
+</svg>
