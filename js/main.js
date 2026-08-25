@@ -222,13 +222,11 @@ function highlightActiveNavLink() {
  * Efeito Visual: Scroll Reveal Suave (IntersectionObserver)
  */
 function initScrollReveal() {
-  // Se usuário prefere movimento reduzido, pula animações
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     document.querySelectorAll('.reveal').forEach(el => el.classList.add('is-revealed'));
     return;
   }
 
-  // Auto-adiciona .reveal em seções principais, cards e blocos de destaque se ainda não tiverem
   const targets = document.querySelectorAll(
     'section:not(.page-header):not(.hero-section), .card, .proof-strip, .story-box, .values-card, .footer-store-box'
   );
@@ -236,7 +234,6 @@ function initScrollReveal() {
   targets.forEach((el, index) => {
     if (!el.classList.contains('reveal')) {
       el.classList.add('reveal');
-      // Adiciona leve delay em cards dentro do mesmo grid
       if (el.classList.contains('card') || el.classList.contains('values-card') || el.classList.contains('footer-store-box')) {
         const siblingIndex = (index % 4) + 1;
         el.classList.add(`reveal-delay-${siblingIndex}`);
@@ -272,7 +269,6 @@ function initCounters() {
   const animateCounter = (el) => {
     const rawText = el.textContent.trim();
     
-    // Extrai prefixo, valor numérico e sufixo
     let targetNum = 0;
     let prefix = '';
     let suffix = '';
@@ -284,7 +280,11 @@ function initCounters() {
     } else if (rawText.includes('250')) {
       prefix = '+';
       targetNum = 250;
-      suffix = ' mil';
+      suffix = ' Mil';
+    } else if (rawText.includes('98')) {
+      prefix = '+';
+      targetNum = 98;
+      suffix = '%';
     } else if (rawText.includes('100%')) {
       prefix = '';
       targetNum = 100;
@@ -292,20 +292,18 @@ function initCounters() {
     } else if (rawText.includes('20')) {
       prefix = '+';
       targetNum = 20;
-      suffix = ' mil';
+      suffix = ' Mil';
     } else {
-      return; // Mantém texto estático se formato desconhecido
+      return;
     }
 
     let current = 0;
-    const duration = 1200; // ms
+    const duration = 1200;
     const startTime = performance.now();
 
     const updateFrame = (currentTime) => {
       const elapsed = currentTime - startTime;
       const progress = Math.min(elapsed / duration, 1);
-      
-      // Easing suave (easeOutExpo)
       const easeOut = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
       current = Math.floor(easeOut * targetNum);
       
@@ -314,7 +312,7 @@ function initCounters() {
       if (progress < 1) {
         requestAnimationFrame(updateFrame);
       } else {
-        el.textContent = rawText; // Garante texto exato original no fim
+        el.textContent = rawText;
       }
     };
 
