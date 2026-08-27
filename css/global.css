@@ -133,15 +133,15 @@ p.lead {
 }
 
 .section-tag.tag-green {
-  background: var(--color-primary-subtle);
-  color: var(--color-primary);
-  border-color: var(--color-primary-border);
+  background: var(--color-accent-subtle);
+  color: var(--color-accent);
+  border-color: var(--color-accent-border);
 }
 
 .section-tag.tag-yellow {
-  background: var(--color-accent-subtle);
-  color: var(--color-accent);
-  border-color: rgba(234, 179, 8, 0.2);
+  background: var(--color-primary-subtle);
+  color: var(--color-primary);
+  border-color: var(--color-primary-border);
 }
 
 .section-tag.tag-neutral {
@@ -236,6 +236,7 @@ textarea:focus-visible {
 @media (max-width: 640px) {
   button, .btn, a.btn, .social-btn, .mobile-toggle-btn {
     min-height: 44px;
+    min-width: 44px;
   }
 }
 

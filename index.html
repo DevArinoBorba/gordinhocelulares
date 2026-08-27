@@ -3,62 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gordinho Celulares &amp; Personalizados | Itajaí/SC</title>
-  <meta name="description" content="Assistência técnica, acessórios e personalização de nível nacional, feita à mão em Itajaí/SC. +10 anos de mercado e +250 mil atendimentos.">
+  <title>Gordinho Celulares | Assistência Técnica &amp; Acessórios em Itajaí/SC</title>
+  <meta name="description" content="Assistência técnica especializada e acessórios para celulares, tablets e computadores em Itajaí/SC. +10 anos de mercado e +250 mil atendimentos.">
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
   <link rel="apple-touch-icon" href="assets/images/favicon.png">
-  
+
   <!-- CSS Design System -->
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/pages.css">
 
-  <!-- Schema.org JSON-LD para as 2 Lojas Físicas em Itajaí -->
+  <!-- Schema.org JSON-LD para Gordinho Celulares -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "LocalBusiness",
-        "@id": "https://grupogordinho.com.br/#celulares",
-        "name": "Gordinho Celulares",
-        "description": "Assistência técnica especializada em smartphones e tablets, troca de tela, baterias e venda de acessórios.",
-        "telephone": "+5547996970405",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Rua Cônego Thomaz Fontes, 417",
-          "addressLocality": "Itajaí",
-          "addressRegion": "SC",
-          "postalCode": "88301-100",
-          "addressCountry": "BR"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": -26.9079,
-          "longitude": -48.6619
-        },
-        "sameAs": [
-          "https://www.instagram.com/gordinhocelularoficial/"
-        ]
-      },
-      {
-        "@type": "LocalBusiness",
-        "@id": "https://grupogordinho.com.br/#personalizados",
-        "name": "Gordinho Personalizados",
-        "description": "Venda de produtos personalizados (garrafas, canecas, adesivos) e personalização para empresas (envelopamento, fachadas).",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Rua Cônego Tomás Fontes, 417",
-          "addressLocality": "Itajaí",
-          "addressRegion": "SC",
-          "postalCode": "88301-100",
-          "addressCountry": "BR"
-        },
-        "sameAs": [
-          "https://www.instagram.com/gordinhopersonalizadosoficial/"
-        ]
-      }
+    "@type": "LocalBusiness",
+    "@id": "https://gordinhocelulares.com.br/#negocio",
+    "name": "Gordinho Celulares",
+    "description": "Assistência técnica especializada em smartphones e tablets, troca de tela, baterias e venda de acessórios para celulares e computadores.",
+    "image": "https://gordinhocelulares.com.br/assets/images/logo.png",
+    "telephone": "+5547996970405",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Cônego Thomaz Fontes, 417",
+      "addressLocality": "Itajaí",
+      "addressRegion": "SC",
+      "postalCode": "88301-100",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -26.9079,
+      "longitude": -48.6619
+    },
+    "sameAs": [
+      "https://www.instagram.com/gordinhocelularoficial/",
+      "https://www.tiktok.com/@ogordinhocelular",
+      "https://www.facebook.com/gordinhocelularoficial"
     ]
   }
   </script>
@@ -71,29 +53,28 @@
   <header class="site-header">
     <div class="container header-container">
       <!-- Brand Logo -->
-      <a href="index.html" class="brand-logo" aria-label="Página inicial Grupo Gordinho">
-        <img src="assets/images/logo.png" alt="Grupo Gordinho - Celulares &amp; Personalizados" class="brand-logo-img">
+      <a href="index.html" class="brand-logo" aria-label="Página inicial Gordinho Celulares">
+        <img src="assets/images/logo.png" alt="Gordinho Celulares" class="brand-logo-img">
       </a>
 
-      <!-- Desktop Navigation (6 páginas/seções) -->
+      <!-- Desktop Navigation -->
       <nav class="desktop-nav" aria-label="Navegação Principal">
         <a href="index.html" class="nav-link active">Home</a>
         <a href="sobre.html" class="nav-link">Sobre Nós</a>
-        <a href="assistencia.html" class="nav-link">Assistência &amp; Acessórios</a>
-        <a href="personalizados.html" class="nav-link">Personalizados</a>
-        <a href="empresas.html" class="nav-link">Para Empresas (B2B)</a>
-        <a href="contato.html" class="nav-link">Contato &amp; Loja</a>
+        <a href="assistencia.html" class="nav-link">Assistência Técnica</a>
+        <a href="acessorios.html" class="nav-link">Acessórios</a>
+        <a href="contato.html" class="nav-link">Contato</a>
       </nav>
 
       <!-- Header Actions -->
       <div class="header-actions">
-        <button type="button" class="btn btn-whatsapp btn-sm" data-open-whatsapp-modal aria-label="Falar no WhatsApp">
+        <a href="https://wa.me/5547996970405?text=Ol%C3%A1%21%20Gostaria%20de%20falar%20com%20o%20Gordinho%20Celulares." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm" aria-label="Falar no WhatsApp">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
           <span>Falar no WhatsApp</span>
-        </button>
+        </a>
 
         <!-- Mobile Hamburguer Toggle -->
-        <button type="button" class="mobile-toggle-btn" aria-label="Abrir menu de navegação">
+        <button type="button" class="mobile-toggle-btn" id="mobileToggleBtn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobileDrawer">
           <span></span>
           <span></span>
           <span></span>
@@ -106,37 +87,36 @@
   <div class="mobile-drawer-backdrop"></div>
 
   <!-- Mobile Drawer Menu -->
-  <div class="mobile-drawer">
+  <div class="mobile-drawer" id="mobileDrawer">
     <div>
       <div style="margin-bottom: var(--space-6); display: flex; align-items: center; justify-content: space-between;">
-        <img src="assets/images/logo.png" alt="Grupo Gordinho" style="height: 48px; width: auto;">
+        <img src="assets/images/logo.png" alt="Gordinho Celulares" style="height: 48px; width: auto;">
       </div>
-      <nav class="mobile-nav-list">
+      <nav class="mobile-nav-list" aria-label="Navegação Mobile">
         <a href="index.html" class="mobile-nav-link active">Home <span>→</span></a>
         <a href="sobre.html" class="mobile-nav-link">Sobre Nós <span>→</span></a>
-        <a href="assistencia.html" class="mobile-nav-link">Assistência &amp; Acessórios <span>→</span></a>
-        <a href="personalizados.html" class="mobile-nav-link">Personalizados (B2C) <span>→</span></a>
-        <a href="empresas.html" class="mobile-nav-link">Para Empresas (B2B) <span>→</span></a>
-        <a href="contato.html" class="mobile-nav-link">Contato &amp; Loja <span>→</span></a>
+        <a href="assistencia.html" class="mobile-nav-link">Assistência Técnica <span>→</span></a>
+        <a href="acessorios.html" class="mobile-nav-link">Acessórios <span>→</span></a>
+        <a href="contato.html" class="mobile-nav-link">Contato <span>→</span></a>
       </nav>
     </div>
 
     <div style="padding-top: var(--space-6); border-top: 1px solid var(--border-color);">
-      <button type="button" class="btn btn-whatsapp" style="width: 100%;" data-open-whatsapp-modal>
+      <a href="https://wa.me/5547996970405?text=Ol%C3%A1%21%20Gostaria%20de%20falar%20com%20o%20Gordinho%20Celulares." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%;">
         Falar no WhatsApp
-      </button>
+      </a>
     </div>
   </div>
 
   <main style="flex: 1;">
 
     <!-- =========================================================================
-         1. HERO SECTION (BENTO GRID & FOTOGRAFIAS REAIS)
+         1. HERO SECTION
          ========================================================================= -->
     <section class="hero-section">
       <div class="container">
         <div class="hero-grid">
-          
+
           <!-- Hero Text Content -->
           <div class="hero-content">
             <div class="hero-tag-badge">
@@ -145,21 +125,21 @@
             </div>
 
             <h1 class="hero-title">
-              Gordinho Celulares &amp; Personalizados
+              Gordinho Celulares
             </h1>
 
             <p class="hero-text">
-              Manutenção rápida e especializada de smartphones e criação de produtos personalizados de alta qualidade em Itajaí/SC. Mais de 10 anos de excelência com loja física no centro.
+              Assistência técnica especializada e acessórios para celulares, tablets e computadores em Itajaí/SC. Mais de 10 anos cuidando do seu aparelho com agilidade e transparência.
             </p>
 
             <div class="hero-actions">
-              <button type="button" class="btn btn-whatsapp btn-lg" data-open-whatsapp-modal aria-label="Solicitar Orçamento no WhatsApp">
+              <a href="https://wa.me/5547996970405?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20no%20Gordinho%20Celulares." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg" aria-label="Solicitar Orçamento no WhatsApp">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
                 <span>Solicitar Orçamento no WhatsApp</span>
-              </button>
+              </a>
 
               <a href="#frentes" class="btn btn-secondary btn-lg">
-                <span>Ver Serviços &amp; Produtos</span>
+                <span>Ver Serviços &amp; Acessórios</span>
                 <span>↓</span>
               </a>
             </div>
@@ -169,40 +149,26 @@
             </div>
           </div>
 
-          <!-- Hero Bento Collage (Fotografias Reais) -->
+          <!-- Hero Visual (Fotografia Real) -->
           <div class="hero-visual">
-            <div class="hero-bento-collage">
-              
+            <div class="hero-single-image">
+              <img src="assets/images/hero-repair.jpg" alt="Manutenção e assistência técnica especializada de smartphones em bancada profissional" loading="eager">
+
+              <div class="bento-floating-badge badge-pos-top-left">
+                <span>🔧</span>
+                <span>Reparo em Minutos</span>
+              </div>
+              <div class="bento-floating-badge badge-pos-bottom-left">
+                <span>📦</span>
+                <span>Acessórios Originais e Compatíveis</span>
+              </div>
+
               <!-- Selo Circular de Garantia com Mascote -->
               <div class="bento-seal-badge" title="Gordinho Qualidade Garantida">
                 <img src="assets/images/mascot.png" alt="Mascote Gordinho" class="bento-seal-img">
                 <span class="bento-seal-text">Gordinho</span>
                 <span class="bento-seal-text" style="font-size: 0.38rem; color: #94A3B8;">Garantia</span>
               </div>
-
-              <!-- Tile 1 (Top): Assistência Técnica -->
-              <div class="bento-tile bento-tile-top">
-                <img src="assets/images/hero-repair.jpg" alt="Manutenção e assistência técnica especializada de smartphones em bancada profissional" loading="eager">
-                <div class="bento-floating-badge badge-pos-top-left">
-                  <span>🔧</span>
-                  <span>Reparo em Minutos</span>
-                </div>
-              </div>
-
-              <!-- Tile 2 (Bottom-Left): Garrafas & Copos Térmicos -->
-              <div class="bento-tile">
-                <img src="assets/images/hero-cups.jpg" alt="Copos e garrafas térmicas com gravação a laser personalizada" loading="lazy">
-                <div class="bento-floating-badge badge-pos-bottom-left">
-                  <span>🎨</span>
-                  <span>Personalizados Sem Pedido Mínimo</span>
-                </div>
-              </div>
-
-              <!-- Tile 3 (Bottom-Right): Brindes & Merch -->
-              <div class="bento-tile">
-                <img src="assets/images/hero-merch.jpg" alt="Chaveiros gravados a laser, camisetas DTF e brindes corporativos" loading="lazy">
-              </div>
-
             </div>
           </div>
 
@@ -216,7 +182,7 @@
     <section class="container" style="margin-bottom: var(--space-20);">
       <div class="proof-strip">
         <div class="proof-grid">
-          
+
           <!-- Stat 1 -->
           <div class="proof-item">
             <div class="proof-item-header">
@@ -262,31 +228,30 @@
     </section>
 
     <!-- =========================================================================
-         3. OS 3 BLOCOS DE ENTRADA DO NEGÓCIO
+         3. AS 2 FRENTES DE ATENDIMENTO
          ========================================================================= -->
     <section id="frentes" class="section">
       <div class="container">
-        
+
         <div class="section-header">
           <div class="section-tag">O que você precisa hoje?</div>
-          <h2 class="section-title">Nossas 3 Frentes de Atendimento</h2>
+          <h2 class="section-title">Nossas Frentes de Atendimento</h2>
           <p class="section-subtitle">
-            Estrutura completa para cuidar do seu smartphone, criar presentes memoráveis ou transformar a identidade da sua empresa.
+            Estrutura completa para cuidar do seu smartphone e equipar o seu dia a dia com os acessórios certos.
           </p>
         </div>
 
-        <div class="entrance-cards-grid">
-          
-          <!-- Bloco 1: Assistência Técnica & Acessórios -->
-          <div class="entrance-card entrance-card-celulares">
+        <div class="entrance-cards-grid cols-2" style="max-width: 800px; margin: 0 auto;">
+
+          <!-- Bloco 1: Assistência Técnica -->
+          <div class="entrance-card">
             <div class="entrance-card-body">
-              <div class="card-icon-wrapper card-icon-green">📱</div>
-              <div class="section-tag" style="margin-bottom: var(--space-3);">Loja Física 1</div>
+              <div class="card-icon-wrapper card-icon-green">🔧</div>
               <h3 class="entrance-card-title">
-                Assistência Técnica &amp; Acessórios
+                Assistência Técnica
               </h3>
               <p class="entrance-card-text">
-                Troca de tela, bateria, conector, películas, capinhas, carregadores e muito mais. Atendimento presencial e delivery.
+                Troca de tela, bateria, botão, carcaça, conector de carga e outros reparos. Atendimento presencial e delivery.
               </p>
             </div>
             <div>
@@ -297,41 +262,20 @@
             </div>
           </div>
 
-          <!-- Bloco 2: Personalizados B2C -->
-          <div class="entrance-card entrance-card-personalizados">
+          <!-- Bloco 2: Acessórios -->
+          <div class="entrance-card">
             <div class="entrance-card-body">
-              <div class="card-icon-wrapper card-icon-yellow">🎁</div>
-              <div class="section-tag tag-yellow" style="margin-bottom: var(--space-3);">Loja Física 2</div>
+              <div class="card-icon-wrapper card-icon-yellow">🔌</div>
               <h3 class="entrance-card-title">
-                Personalizados (B2C)
+                Acessórios
               </h3>
               <p class="entrance-card-text">
-                Garrafas, chaveiros e presentes personalizados para você ou para presentear. Compre pronto, com entrega para todo o Brasil.
+                Carregadores, cabos, fones, capinhas, suportes e acessórios para celulares, tablets e computadores.
               </p>
             </div>
             <div>
-              <a href="personalizados.html" class="btn btn-accent" style="width: 100%;">
-                <span>Comprar personalizados</span>
-                <span>→</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- Bloco 3: Personalização B2B -->
-          <div class="entrance-card entrance-card-b2b">
-            <div class="entrance-card-body">
-              <div class="card-icon-wrapper card-icon-blue">🏢</div>
-              <div class="section-tag tag-neutral" style="margin-bottom: var(--space-3);">Soluções Corporativas</div>
-              <h3 class="entrance-card-title">
-                Personalização para Empresas (B2B)
-              </h3>
-              <p class="entrance-card-text">
-                Envelopamento de veículos, fachadas e personalizados em grande escala para quem quer revender ou fortalecer sua marca.
-              </p>
-            </div>
-            <div>
-              <a href="empresas.html" class="btn btn-secondary" style="width: 100%;">
-                <span>Solicitar orçamento</span>
+              <a href="acessorios.html" class="btn btn-accent" style="width: 100%;">
+                <span>Ver acessórios</span>
                 <span>→</span>
               </a>
             </div>
@@ -343,62 +287,73 @@
     </section>
 
     <!-- =========================================================================
-         4. SEÇÃO FINAL DE CTA DUPLO (WHATSAPPS DAS DUAS LOJAS)
+         4. CTA FINAL + REDES SOCIAIS EM DESTAQUE
          ========================================================================= -->
     <section class="section">
       <div class="container">
-        <div class="dual-cta-section">
-          
-          <div style="text-align: center; max-width: 650px; margin: 0 auto;">
+        <div class="dual-cta-section" style="text-align: center;">
+
+          <div style="max-width: 650px; margin: 0 auto;">
             <div class="section-tag tag-yellow">Fale com a Gente</div>
             <h2 style="margin-bottom: var(--space-3);">Pronto para ser atendido?</h2>
-            <p style="font-size: var(--text-base); color: var(--text-secondary);">
-              Escolha a unidade que deseja falar e inicie sua conversa diretamente no WhatsApp com a nossa equipe em Itajaí:
+            <p style="font-size: var(--text-base); color: var(--text-secondary); margin-bottom: var(--space-6);">
+              Chame agora mesmo a nossa equipe no WhatsApp e resolva o problema do seu aparelho ou peça o acessório que precisa.
             </p>
-          </div>
 
-          <div class="dual-cta-grid">
-            
-            <!-- Loja Celulares -->
-            <div class="cta-store-card border-green">
-              <div>
-                <div style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-2);">
-                  <span style="font-size: 1.5rem;">📱</span>
-                  <h3 style="font-size: var(--text-lg); color: var(--color-primary);">Gordinho Celulares</h3>
-                </div>
-                <p style="font-size: var(--text-sm); margin-bottom: var(--space-4);">
-                  Para troca de tela, baterias, orçamentos técnicos de celulares e acessórios.
-                </p>
-                <div style="font-size: var(--text-xs); color: var(--text-muted); margin-bottom: var(--space-5);">
-                  📍 Rua Cônego Thomaz Fontes, 417 — Centro, Itajaí
-                </div>
-              </div>
-              <a href="https://wa.me/5547996970405?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20no%20Gordinho%20Celulares." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%;">
-                <span>Conversar com Celulares</span>
+            <div class="flex items-center justify-center gap-4" style="flex-wrap: wrap; margin-bottom: var(--space-8);">
+              <a href="https://wa.me/5547996970405?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20no%20Gordinho%20Celulares." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+                <span>Conversar no WhatsApp</span>
                 <span style="font-weight: normal; font-size: var(--text-xs);">(47) 99697-0405</span>
               </a>
             </div>
 
-            <!-- Loja Personalizados -->
-            <div class="cta-store-card border-yellow">
-              <div>
-                <div style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-2);">
-                  <span style="font-size: 1.5rem;">🎁</span>
-                  <h3 style="font-size: var(--text-lg); color: var(--color-accent);">Gordinho Personalizados</h3>
-                </div>
-                <p style="font-size: var(--text-sm); margin-bottom: var(--space-4);">
-                  Para presentes, garrafas, canecas, adesivos, envelopamento de veículos ou fachadas.
-                </p>
-                <div style="font-size: var(--text-xs); color: var(--text-muted); margin-bottom: var(--space-5);">
-                  📍 Rua Cônego Tomás Fontes, 417 — Centro, Itajaí
-                </div>
-              </div>
-              <a href="https://wa.me/message/Y65VYC3IEKBXA1" target="_blank" rel="noopener noreferrer" class="btn btn-accent" style="width: 100%;">
-                <span>Conversar com Personalizados</span>
-                <span style="font-weight: normal; font-size: var(--text-xs);">WhatsApp Oficial</span>
-              </a>
+            <div style="font-size: var(--text-xs); color: var(--text-muted); margin-bottom: var(--space-6);">
+              📍 Rua Cônego Thomaz Fontes, 417 — Centro, Itajaí/SC
             </div>
 
+            <!-- Redes Sociais em Evidência -->
+            <div style="border-top: 1px solid var(--border-color); padding-top: var(--space-6);">
+              <p style="font-size: var(--text-sm); font-weight: 700; color: var(--text-primary); margin-bottom: var(--space-4);">
+                Siga a Gordinho Celulares nas redes
+              </p>
+              <div class="social-proof-row">
+                <a href="https://www.instagram.com/gordinhocelularoficial/" target="_blank" rel="noopener noreferrer" class="social-network-card" aria-label="Instagram Gordinho Celulares">
+                  <div class="social-network-icon" style="color: #E1306C;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                  </div>
+                  <div class="social-network-title">Instagram</div>
+                  <div class="social-network-handle">@gordinhocelularoficial</div>
+                </a>
+                <a href="https://www.tiktok.com/@ogordinhocelular" target="_blank" rel="noopener noreferrer" class="social-network-card" aria-label="TikTok Gordinho Celulares">
+                  <div class="social-network-icon" style="color: #25F4EE;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-.88-.06A6.34 6.34 0 0 0 3 15.68a6.34 6.34 0 0 0 10.82 4.49 6.27 6.27 0 0 0 1.86-4.5V8.55a8.28 8.28 0 0 0 5.07 1.74v-3.6z"/></svg>
+                  </div>
+                  <div class="social-network-title">TikTok</div>
+                  <div class="social-network-handle">@ogordinhocelular</div>
+                </a>
+                <a href="https://www.facebook.com/gordinhocelularoficial" target="_blank" rel="noopener noreferrer" class="social-network-card" aria-label="Facebook Gordinho Celulares">
+                  <div class="social-network-icon" style="color: #1877F2;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                  </div>
+                  <div class="social-network-title">Facebook</div>
+                  <div class="social-network-handle">/gordinhocelularoficial</div>
+                </a>
+                <a href="https://www.threads.net/@gordinhocelularoficial" target="_blank" rel="noopener noreferrer" class="social-network-card" aria-label="Threads Gordinho Celulares">
+                  <div class="social-network-icon" style="color: #E5E5E5;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 9 0 1 0-4 8"/></svg>
+                  </div>
+                  <div class="social-network-title">Threads</div>
+                  <div class="social-network-handle">@gordinhocelularoficial</div>
+                </a>
+                <a href="https://www.youtube.com/@gordinhocelularoficial" target="_blank" rel="noopener noreferrer" class="social-network-card" aria-label="YouTube Gordinho Celulares">
+                  <div class="social-network-icon" style="color: #FF0000;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.016 3.016 0 0 0 .502 6.186 31.36 31.36 0 0 0 0 12a31.36 31.36 0 0 0 .502 5.814 3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.016 3.016 0 0 0 2.122-2.136A31.36 31.36 0 0 0 24 12a31.36 31.36 0 0 0-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                  </div>
+                  <div class="social-network-title">YouTube</div>
+                  <div class="social-network-handle">@gordinhocelularoficial</div>
+                </a>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -408,79 +363,41 @@
   </main>
 
   <!-- =========================================================================
-       MODAL: SELETOR DE WHATSAPP
-       ========================================================================= -->
-  <div class="whatsapp-modal-backdrop" id="whatsappModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="whatsapp-modal">
-      <button type="button" class="modal-close-btn" data-close-whatsapp-modal aria-label="Fechar modal">✕</button>
-      
-      <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4);">
-        <div style="width: 44px; height: 44px; background: rgba(16, 185, 129, 0.15); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: var(--color-primary);">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-        </div>
-        <div>
-          <h3 id="modalTitle" style="font-size: var(--text-lg); margin-bottom: 2px;">Falar com o Grupo Gordinho</h3>
-          <p style="font-size: var(--text-xs); color: var(--text-secondary);">Escolha o setor que deseja contatar no WhatsApp:</p>
-        </div>
-      </div>
-
-      <!-- Opção 1: Celulares -->
-      <a href="https://wa.me/5547996970405?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20no%20Gordinho%20Celulares." target="_blank" rel="noopener noreferrer" class="store-choice-card">
-        <div style="font-size: 1.5rem; color: var(--color-primary);">📱</div>
-        <div style="flex: 1;">
-          <div style="font-weight: 700; color: var(--text-primary); font-size: var(--text-sm);">Gordinho Celulares</div>
-          <div style="font-size: var(--text-xs); color: var(--text-secondary);">Assistência técnica, telas, baterias e acessórios</div>
-          <div style="font-size: var(--text-xs); color: var(--color-primary); margin-top: 2px; font-weight: 600;">(47) 99697-0405 • R. Cônego Tomás Fontes, 417</div>
-        </div>
-        <span style="color: var(--color-primary); font-weight: 700;">→</span>
-      </a>
-
-      <!-- Opção 2: Personalizados (B2C & B2B) -->
-      <a href="https://wa.me/message/Y65VYC3IEKBXA1" target="_blank" rel="noopener noreferrer" class="store-choice-card">
-        <div style="font-size: 1.5rem; color: var(--color-accent);">🎁</div>
-        <div style="flex: 1;">
-          <div style="font-weight: 700; color: var(--text-primary); font-size: var(--text-sm);">Gordinho Personalizados</div>
-          <div style="font-size: var(--text-xs); color: var(--text-secondary);">Garrafas, canecas, brindes, frotas e fachadas</div>
-          <div style="font-size: var(--text-xs); color: var(--color-accent); margin-top: 2px; font-weight: 600;">WhatsApp Oficial • R. Cônego Tomás Fontes, 417</div>
-        </div>
-        <span style="color: var(--color-accent); font-weight: 700;">→</span>
-      </a>
-    </div>
-  </div>
-
-  <!-- =========================================================================
-       FOOTER (Duas Lojas Físicas Separadas + Redes do Grupo)
+       FOOTER
        ========================================================================= -->
   <footer class="site-footer">
     <div class="container">
-      
-      <!-- 4 Colunas Balanceadas -->
+
+      <!-- 3 Colunas Balanceadas -->
       <div class="footer-grid">
-        
+
         <!-- Coluna 1: Informações da Marca -->
         <div>
-          <img src="assets/images/logo.png" alt="Grupo Gordinho" style="height: 44px; width: auto; margin-bottom: var(--space-3);">
+          <img src="assets/images/logo.png" alt="Gordinho Celulares" style="height: 44px; width: auto; margin-bottom: var(--space-3);">
           <p style="font-size: var(--text-xs); line-height: 1.6; margin-bottom: var(--space-3); color: var(--text-secondary);">
-            Mais de 10 anos de tradição em Itajaí/SC. Assistência técnica especializada e produtos personalizados de alto padrão.
+            Mais de 10 anos de tradição em Itajaí/SC. Assistência técnica especializada e acessórios para celulares, tablets e computadores.
           </p>
           <div style="display: flex; gap: var(--space-2); align-items: center; flex-wrap: wrap; margin-bottom: var(--space-3);">
             <span class="badge-inpi">Marca Registrada INPI®</span>
             <span class="badge-confirm">E-mail: [A CONFIRMAR]</span>
           </div>
 
-          <!-- Redes Sociais do Grupo -->
+          <!-- Redes Sociais -->
           <div class="social-links-row" style="margin-top: var(--space-2);">
-            <a href="https://www.instagram.com/gordinhocelularoficial/" target="_blank" rel="noopener noreferrer" class="social-btn" title="Instagram Celulares">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            <a href="https://www.instagram.com/gordinhocelularoficial/" target="_blank" rel="noopener noreferrer" class="social-btn" title="Instagram" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
             </a>
-            <a href="https://www.instagram.com/gordinhopersonalizadosoficial/" target="_blank" rel="noopener noreferrer" class="social-btn" title="Instagram Personalizados">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            <a href="https://www.tiktok.com/@ogordinhocelular" target="_blank" rel="noopener noreferrer" class="social-btn" title="TikTok" aria-label="TikTok">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-.88-.06A6.34 6.34 0 0 0 3 15.68a6.34 6.34 0 0 0 10.82 4.49 6.27 6.27 0 0 0 1.86-4.5V8.55a8.28 8.28 0 0 0 5.07 1.74v-3.6z"/></svg>
             </a>
-            <a href="https://www.tiktok.com/@ogordinhocelular" target="_blank" rel="noopener noreferrer" class="social-btn" title="TikTok @ogordinhocelular">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-.88-.06A6.34 6.34 0 0 0 3 15.68a6.34 6.34 0 0 0 10.82 4.49 6.27 6.27 0 0 0 1.86-4.5V8.55a8.28 8.28 0 0 0 5.07 1.74v-3.6z"/></svg>
+            <a href="https://www.facebook.com/gordinhocelularoficial" target="_blank" rel="noopener noreferrer" class="social-btn" title="Facebook" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
             </a>
-            <a href="https://www.facebook.com/gordinhocelularoficial" target="_blank" rel="noopener noreferrer" class="social-btn" title="Facebook">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            <a href="https://www.threads.net/@gordinhocelularoficial" target="_blank" rel="noopener noreferrer" class="social-btn" title="Threads" aria-label="Threads">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 9 0 1 0-4 8"/></svg>
+            </a>
+            <a href="https://www.youtube.com/@gordinhocelularoficial" target="_blank" rel="noopener noreferrer" class="social-btn" title="YouTube" aria-label="YouTube">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.016 3.016 0 0 0 .502 6.186 31.36 31.36 0 0 0 0 12a31.36 31.36 0 0 0 .502 5.814 3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.016 3.016 0 0 0 2.122-2.136A31.36 31.36 0 0 0 24 12a31.36 31.36 0 0 0-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
             </a>
           </div>
         </div>
@@ -488,17 +405,16 @@
         <!-- Coluna 2: Navegação Rápida -->
         <div>
           <h4 style="font-size: var(--text-sm); font-weight: 700; margin-bottom: var(--space-3); color: var(--text-primary);">Navegação</h4>
-          <nav class="footer-links-list">
+          <nav class="footer-links-list" aria-label="Navegação do Rodapé">
             <a href="index.html" class="footer-link">Página Inicial</a>
             <a href="sobre.html" class="footer-link">Sobre Nós</a>
             <a href="assistencia.html" class="footer-link">Assistência Técnica</a>
-            <a href="personalizados.html" class="footer-link">Personalizados (B2C)</a>
-            <a href="empresas.html" class="footer-link">Para Empresas (B2B)</a>
-            <a href="contato.html" class="footer-link">Contato &amp; Lojas</a>
+            <a href="acessorios.html" class="footer-link">Acessórios</a>
+            <a href="contato.html" class="footer-link">Contato</a>
           </nav>
         </div>
 
-        <!-- Coluna 3: Loja Celulares -->
+        <!-- Coluna 3: Loja & Contato -->
         <div class="footer-store-box">
           <div style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-2);">
             <span style="font-size: 1.1rem;">📱</span>
@@ -508,36 +424,13 @@
             Assistência técnica multimarca &amp; acessórios.
           </p>
           <div style="font-size: 0.8rem; margin-bottom: 4px; color: var(--text-secondary);">
-            📍 R. Cônego Tomás Fontes, 417 — Centro
+            📍 R. Cônego Thomaz Fontes, 417 — Centro
           </div>
           <div style="font-size: 0.8rem; margin-bottom: 4px;">
-            📞 <a href="https://wa.me/5547996970405" style="color: var(--color-primary); font-weight: 600;">(47) 99697-0405</a>
+            📞 <a href="https://wa.me/5547996970405" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary); font-weight: 600;">(47) 99697-0405</a>
           </div>
           <div style="font-size: 0.8rem; margin-bottom: var(--space-2);">
             📸 <a href="https://www.instagram.com/gordinhocelularoficial/" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary);">@gordinhocelularoficial</a>
-          </div>
-          <div>
-            <span class="badge-confirm">Horário: [A CONFIRMAR]</span>
-          </div>
-        </div>
-
-        <!-- Coluna 4: Loja Personalizados -->
-        <div class="footer-store-box">
-          <div style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-2);">
-            <span style="font-size: 1.1rem;">🎁</span>
-            <h4 style="font-size: var(--text-sm); font-weight: 700; color: var(--color-accent);">Gordinho Personalizados</h4>
-          </div>
-          <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: var(--space-2);">
-            Presentes personalizados &amp; B2B Corporativo.
-          </p>
-          <div style="font-size: 0.8rem; margin-bottom: 4px; color: var(--text-secondary);">
-            📍 R. Cônego Tomás Fontes, 417 — Centro
-          </div>
-          <div style="font-size: 0.8rem; margin-bottom: 4px;">
-            📞 <a href="https://wa.me/message/Y65VYC3IEKBXA1" target="_blank" rel="noopener noreferrer" style="color: var(--color-accent); font-weight: 600;">WhatsApp Oficial</a>
-          </div>
-          <div style="font-size: 0.8rem; margin-bottom: var(--space-2);">
-            📸 <a href="https://www.instagram.com/gordinhopersonalizadosoficial/" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary);">@gordinhopersonalizadosoficial</a>
           </div>
           <div>
             <span class="badge-confirm">Horário: [A CONFIRMAR]</span>
@@ -549,10 +442,10 @@
       <!-- Footer Bottom -->
       <div class="footer-bottom">
         <div>
-          &copy; 2026 Grupo Gordinho — Todos os direitos reservados. Marca registrada no INPI®.
+          &copy; 2026 Gordinho Celulares — Todos os direitos reservados. Marca registrada no INPI®.
         </div>
         <div style="display: flex; gap: var(--space-4);">
-          <span style="color: var(--text-muted);">Rua Cônego Tomás Fontes, 417 — Centro, Itajaí/SC</span>
+          <span style="color: var(--text-muted);">Rua Cônego Thomaz Fontes, 417 — Centro, Itajaí/SC</span>
         </div>
       </div>
 
@@ -560,7 +453,6 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="js/whatsapp.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
